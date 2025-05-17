@@ -61,7 +61,7 @@ router.delete("/deletecategory/:id", deletecategory);
 // Product Routes
 router.get("/getproducts", getproduct);
 router.post('/addproduct',upload.array("images", 4), addproduct); 
-router.patch('/updateproduct/:id',upload.array("images", 4), updateproduct, updateproduct)
+router.patch('/updateproduct/:id',upload.array("images", 4), updateproduct)
 router.delete("/deleteproduct/:id",deleteproduct)
 
 export default router;
